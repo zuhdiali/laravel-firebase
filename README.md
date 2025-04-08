@@ -1,4 +1,4 @@
-Edit `App\Http\Middleware\VerifyCsrfToken::class`. Di bagian $except, tambahkan route dari api untuk save device token. Hal ini perlu dilakukan agar Verifikasi CSRF dimatikan saat menyimpan device token.
+Edit `bootstrap/app.php`. Di bagian $withMiddleware, tambahkan route dari api untuk save device token dan send push notif. Hal ini perlu dilakukan agar Verifikasi CSRF dimatikan saat menyimpan device token dan mengirim notif.
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
